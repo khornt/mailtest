@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0"
+           targetNamespace="urn:com:horntvedt:case2:fagsystem:aktor:v1"
+           xmlns:tns="urn:com:horntvedt:case2:fagsystem:aktor:v1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="Aktor">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="foedselsnummer" type="tns:Foedselsnummer" />
+        <xs:element name="organisasjonsnummer" type="tns:Organisasjonsnummer" />
+      </xs:choice>
+
+      <xs:element name="fornavn" type="xs:string"   />
+      <xs:element name="mellomnavn" type="xs:string" minOccurs="0" />
+      <xs:element name="etternavn" type="xs:string" />
+      <xs:element name="adresselinje1" type="xs:string" />
+      <xs:element name="adresselinje2" type="xs:string" />
+      <xs:element name="postnummer" type="xs:string" />
+      <xs:element name="poststed" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="Organisasjonsnummer">
+    <xs:restriction base="xs:string">
+      <xs:length value="9" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Foedselsnummer">
+    <xs:restriction base="xs:string">
+      <xs:length value="11" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

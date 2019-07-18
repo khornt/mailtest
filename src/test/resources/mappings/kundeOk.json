@@ -1,0 +1,19 @@
+{
+  "request" : {
+    "url" : "/soap-api/fagsystem/v1/fagsystem",
+    "method" : "POST",
+    "headers" : {
+      "SOAPAction" : {
+        "matches" : ".*registrerKunde.*"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "headers" : {
+      "Content-Length" : "216",
+      "Content-Type ": "text/xml;charset=UTF-8"
+    },
+    "bodyFileName" : "fagsystem/kunde.xml"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "foedselsnummer": "01019933544",
+  "fornavn": "Kristian",
+  "mellomnavn": "CamelRider",
+  "etternavn": "Horntvedt",
+  "adresse": {
+    "adresselinje1": "Gateveien 123",
+    "adresselinje2": "Gateveien 123b",
+    "postnummer": "1234",
+    "poststed": "Oslo"
+  },
+  "produkt" : {
+    "produktId" : "1001",
+    "bonus" : "50%"
+  }
+}
